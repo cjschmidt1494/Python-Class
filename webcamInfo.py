@@ -50,7 +50,6 @@ class webcamGet():
         for i in xrange(widthHalf):  #Delete the time entries removed by filter
             del timeAxis[0]
             del timeAxis[-1]
-        #timeAxis[:] = [i-zeroTime for i in timeAxis] #Subtract away the zero time from each element
         
         return timeAxis,filteredMean
 
